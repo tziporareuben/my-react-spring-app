@@ -1,0 +1,52 @@
+.ads-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ad-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .ad-content {
+    padding: 1rem 1.2rem;
+    text-align: center;
+
+    h4 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #d62828;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #444;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-top: 2px solid #eee;
+    transition: transform 0.3s ease;
+
+    .ad-card:hover & {
+      transform: scale(1.03);
+    }
+  }
+}

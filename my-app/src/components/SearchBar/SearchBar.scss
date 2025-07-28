@@ -1,0 +1,29 @@
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse; // מוסיף את האייקון בצד שמאל
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f0f4f8;
+  border-radius: 30px;
+  padding: 8px 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+  color: #1976d2;
+  font-size: 24px;
+  margin-left: 10px; // רווח בין האייקון לשדה החיפוש
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  padding: 8px;
+  direction: rtl;
+}

@@ -1,0 +1,169 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  //background-color: #e0f7f9;
+
+  .login-container {
+    width: 100%;
+    max-width: 380px;
+    padding: 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+
+    .logo {
+      width: 40px;
+      margin: 0 auto 1rem auto;
+      display: block;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #107d88;
+      margin-bottom: 0.5rem;
+    }
+
+    .sub-text {
+      font-size: 0.875rem;
+      color: #489ca1;
+      margin-bottom: 1.5rem;
+
+      a {
+        color: #1fbac0;
+        font-weight: 500;
+        text-decoration: none;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      label {
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
+        color: #107d88;
+      }
+
+      input {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #a8e4e8;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        background-color: #f0fcfd;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .password-wrapper {
+        position: relative;
+
+        input {
+          padding-right: 2.5rem;
+        }
+
+        .toggle-password {
+          position: absolute;
+          right: 0.5rem;
+          top: 50%;
+          transform: translateY(-50%);
+          background: none;
+          border: none;
+          cursor: pointer;
+          color: #107d88;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .alert.error {
+        color: red;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .sign-in-button {
+        background-color: #1fbac0;
+        color: white;
+        padding: 0.6rem;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        width: 100%;
+
+        &:hover {
+          background-color: #18a2a7;
+        }
+      }
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1.5rem 0;
+      font-size: 0.875rem;
+      color: #80cdd1;
+
+      span {
+        position: relative;
+        padding: 0 0.5rem;
+        background: white;
+        z-index: 1;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: #d7f1f2;
+        display: block;
+        position: relative;
+        top: 0.5em;
+        z-index: 0;
+      }
+    }
+
+    .social-buttons {
+      display: flex;
+      gap: 0.5rem;
+
+      button {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        border: 1px solid #b8eaed;
+        border-radius: 6px;
+        padding: 0.5rem;
+        background: white;
+        font-weight: 500;
+        font-size: 0.875rem;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+
+        &:hover {
+          background: #ebfafa;
+        }
+      }
+    }
+  }
+}

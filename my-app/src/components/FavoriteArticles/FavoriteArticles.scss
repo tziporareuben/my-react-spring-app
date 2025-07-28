@@ -1,0 +1,75 @@
+.cart-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  direction: rtl;
+  font-family: "Segoe UI", sans-serif;
+
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+  }
+
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cart-item {
+    display: flex;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    transition: box-shadow 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .cart-item-image {
+      width: 120px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-left: 20px;
+    }
+
+    .cart-item-details {
+      flex-grow: 1;
+
+      h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #2c3e50;
+      }
+
+      p {
+        font-size: 14px;
+        color: #444;
+        margin-bottom: 6px;
+      }
+
+      .MuiIconButton-root {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

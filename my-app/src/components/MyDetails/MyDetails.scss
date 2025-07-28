@@ -1,0 +1,96 @@
+.sign-up-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.sign-up-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.error {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 5px;
+}
+
+.password-wrapper {
+  position: relative;
+
+  input {
+    width: 100%;
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+}
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+
+  .MuiIconButton-root {
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// .form-buttons {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-top: 20px;
+
+//   .submit-button, .cancel-button {
+//     padding: 10px 16px;
+//     border: none;
+//     border-radius: 8px;
+//     font-weight: bold;
+//     cursor: pointer;
+//   }
+
+//   .submit-button {
+//     background-color: #4caf50;
+//     color: white;
+//   }
+
+//   .cancel-button {
+//     background-color: #f44336;
+//     color: white;
+//   }
+//   .readonly-field {
+//   background-color: #f0f0f0;
+//   color: #999;
+//   margin-top: 10px;
+//   padding: 10px;
+//   border-radius: 8px;
+//   border: none;
+// }
+
+// }
+

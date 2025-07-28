@@ -1,0 +1,22 @@
+.ad-banner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.ad-link img {
+  width: 240px;             // הקטנה מגובה 300 ל־240
+  height: auto;             // שומר על פרופורציות
+  max-height: 180px;        // הגבלת גובה
+  object-fit: contain;      // מראה את כל התמונה בלי לחתוך
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.ad-link img:hover {
+  transform: scale(1.05);
+}
